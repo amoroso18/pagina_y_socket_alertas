@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Control Vehicular PNP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" type="text/css" href="plantilla/css/animate.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plantilla/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plantilla/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plantilla/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plantilla/lib/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plantilla/lib/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plantilla/css/dark-color.css"
+    />
+    <link rel="stylesheet" type="text/css" href="plantilla/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plantilla/css/responsive.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Padding para pantallas pequeñas (móviles) */
+@media (max-width: 867.98px) { /* Breakpoint estándar de Bootstrap para móviles */
+  .banner-imgs {
+    padding-top: 100px !important;
+  }
+}
+
+@media (max-width: 867.98px) { /* Breakpoint estándar de Bootstrap para móviles */
+  .main-section-data {
+    padding-top: 10px !important;
+  }
+}
+
+#phonecustom {
+  height: auto;
+  animation: pulse 2s infinite;
+}
+
+/* Define the pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+
+      <header>
+        <div class="custom-container">
+          <div class="header-data">
+            <div class="logo">
+              <h2 class="text-white">
+                <i class="fa fa-bell" aria-hidden="true"></i> HelperAPP
+              </h2>
+            </div>
+
+            <div class="up-social-links">
+              <ul>
+                <li>
+                  <a href="#" title=""><i class="mdi mdi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#" title=""><i class="mdi mdi-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#" title=""><i class="mdi mdi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="/login.html"
+                    ><i class="fa fa-user" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="main-section">
+        <div class="custom-container">
+          <div class="main-section-data" >
+            <div class="row">
+              <div class="col-lg-6 me-3">
+                <div class="banner-text" style="padding-left: 50px;margin-top: -50px !important;">
+                  <h3>Bienvenido a</h3>
+                  <h2>HelperAPP</h2>
+                  <p class="text-justify">
+                    HelperAPP es una aplicación diseñada para asistir a los
+                    estudiantes en situaciones de emergencia, permitiéndoles
+                    reportar incidencias de forma rápida y efectiva a las
+                    autoridades correspondientes. La aplicación está orientada a
+                    mejorar la seguridad y la capacidad de respuesta en el
+                    entorno estudiantil.
+                  </p>
+                  <div class="row text-center">
+                    <div class="col">
+                      <button
+                        class="btn btn-danger btn-lg"
+                        data-bs-toggle="modal"
+                        data-bs-target="#entitiesModal"
+                      >
+                        <img style="width: 141px;" src="/plantilla/images/image-removebg-preview (10).png" alt="">
+                      </button>
+                    </div>
+                    <div class="col">
+                      <button
+                        class="btn btn-warning btn-lg"
+                        data-bs-toggle="modal"
+                        data-bs-target="#reportModal"
+                      >
+                      <img style="width: 150px;" src="/plantilla/images/image-removebg-preview (11).png" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="banner-imgs" style="padding-top: 70px;">
+                  <div
+                    class="row d-flex justify-content-center align-items-center"
+                  >
+                    <div class="col-6">
+                      <img
+                        src="plantilla//images/iPhone-14-Plus-127.0.0.1 (1).png"
+                        alt="iPhone"
+                        id="phonecustom"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-secondary py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <p class="lead">
+              HelperAPP es una solución diseñada para garantizar la seguridad de los estudiantes, permitiendo reportar incidencias y solicitar apoyo en tiempo real.
+            </p>
+          </div>
+          <div class="row">
+            <!-- Sección 1: Reportes en Tiempo Real -->
+            <div class="col-lg-4 text-center mb-4">
+              <div class="p-4 shadow rounded bg-dark">
+                <i class="fa fa-bell fa-3x text-primary mb-3"></i>
+                <h4 class="fw-bold">Reportes en Tiempo Real</h4>
+                <p>
+                  Los estudiantes pueden enviar reportes detallados de incidentes, incluyendo su ubicación y descripción, para garantizar una respuesta inmediata.
+                </p>
+              </div>
+            </div>
+            <!-- Sección 2: Solicitud de Apoyo -->
+            <div class="col-lg-4 text-center mb-4">
+              <div class="p-4 shadow rounded bg-dark">
+                <i class="fa fa-hands-helping fa-3x text-success mb-3"></i>
+                <h4 class="fw-bold">Solicitud de Apoyo</h4>
+                <p>
+                  HelperAPP permite a los estudiantes solicitar ayuda de unidades especializadas como Policía, Bomberos, Serenazgo, y más, en tiempo real.
+                </p>
+              </div>
+            </div>
+            <!-- Sección 3: Gestión de Alertas -->
+            <div class="col-lg-4 text-center mb-4 ">
+              <div class="p-4 shadow rounded bg-dark">
+                <i class="fa fa-tasks fa-3x text-warning mb-3"></i>
+                <h4 class="fw-bold">Gestión de Alertas</h4>
+                <p>
+                  Cada ticket de alerta y reporte es gestionado eficientemente, asegurando un seguimiento adecuado y resolviendo los incidentes rápidamente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Modal de Entidades -->
+      <div
+        class="modal fade"
+        id="entitiesModal"
+        tabindex="-1"
+        aria-labelledby="entitiesModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="entitiesModalLabel">
+                Seleccionar de ayuda
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <button class="btn btn-outline-primary mb-2">
+                <i class="fa fa-shield-alt"></i> Policía
+              </button>
+              <button class="btn btn-outline-danger mb-2">
+                <i class="fa fa-fire-extinguisher"></i> Bombero
+              </button>
+              <button class="btn btn-outline-warning mb-2">
+                <i class="fa fa-user-shield"></i> Serenazgo
+              </button>
+              <button class="btn btn-outline-success mb-2">
+                <i class="fa fa-hospital"></i> Hospital
+              </button>
+              <button class="btn btn-outline-info mb-2">
+                <i class="fa fa-chalkboard-teacher"></i> Profesor
+              </button>
+              <button class="btn btn-outline-dark mb-2">
+                <i class="fa fa-user-lock"></i> Seguridad Universitaria
+              </button>
+              <button class="btn btn-outline-secondary mb-2">
+                <i class="fa fa-user-lock"></i> Todos
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal para Enviar Reporte -->
+      <div
+        class="modal fade"
+        id="reportModal"
+        tabindex="-1"
+        aria-labelledby="reportModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="reportModalLabel">Enviar Reporte</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form id="reportForm">
+                <div class="mb-3">
+                  <label for="reportDescription" class="form-label"
+                    >Titulo:</label
+                  >
+                  <input
+                    type="text"
+                    id="reportTitulo"
+                    class="form-control"
+                    placeholder="Describe el incidente"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="reportDescription" class="form-label"
+                    >Descripción:</label
+                  >
+                  <textarea
+                    id="reportDescription"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Describe el incidente"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Enviar Reporte
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--wrapper end-->
+
+      <footer>
+        <div class="bottom-footer">
+          <div class="custom-container">
+            <div class="bottom-footer-data">
+              <p>HelperAPP © 2024 | Desarrollado por alekeys.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="plantilla/js/jquery.min.js"></script>
+    <script type="text/javascript" src="plantilla/js/popper.js"></script>
+    <script type="text/javascript" src="plantilla/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="plantilla/lib/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript" src="plantilla/js/html5lightbox.js"></script>
+    <script
+      type="text/javascript"
+      src="plantilla/js/jquery.validate.min.js"
+    ></script>
+    <script type="text/javascript" src="plantilla/js/validator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="plantilla/js/script.js"></script>
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+
+    <script>
+      // Inicializa socket.io
+      const socket = io("http://localhost:3000");
+      // Obtener latitud y longitud del navegador
+      function getLocation(callback) {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              const coords = {
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude,
+              };
+              callback(coords);
+            },
+            (error) => {
+              console.error("Error al obtener la ubicación:", error.message);
+            },
+            {
+              enableHighAccuracy: true,
+            }
+          );
+        } else {
+          console.error(
+            "La API de Geolocalización no está soportada en este navegador."
+          );
+        }
+      }
+
+      // Función para enviar la entidad seleccionada con ubicación
+      function sendEntityLocation(entity) {
+        getLocation((coords) => {
+          const now = new Date();
+          const customId = `${now.getFullYear()}${String(
+            now.getMonth() + 1
+          ).padStart(2, "0")}${String(now.getDate()).padStart(2, "0")}${String(
+            now.getHours()
+          ).padStart(2, "0")}${String(now.getMinutes()).padStart(
+            2,
+            "0"
+          )}${String(now.getSeconds()).padStart(2, "0")}${String(
+            now.getMilliseconds()
+          ).padStart(3, "0")}`;
+          const container = {
+            id: customId,
+            customId: customId,
+            group: entity,
+            lat: coords.latitude,
+            lon: coords.longitude,
+            text: `Necesito ayuda`,
+            timestamp: new Date().toISOString(),
+          };
+          socket.emit("send_alert", container);
+          alert(`Se ha enviado una solicitud de ayuda a ${entity}`);
+        });
+      }
+
+      // Asignar eventos a los botones de entidades
+      document.querySelectorAll("#entitiesModal .btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const entity = button.innerText.trim();
+          sendEntityLocation(entity);
+
+          // Cierra el modal
+          const entitiesModal = document.getElementById("entitiesModal");
+          const modalInstance = bootstrap.Modal.getInstance(entitiesModal);
+          modalInstance.hide();
+        });
+      });
+
+      // Manejar el envío del formulario de reporte
+      document
+        .getElementById("reportForm")
+        .addEventListener("submit", (event) => {
+          event.preventDefault();
+
+          const title = document.getElementById("reportTitulo").value;
+          const description =
+            document.getElementById("reportDescription").value;
+
+          getLocation((coords) => {
+            const now = new Date();
+            const customId = `${now.getFullYear()}${String(
+              now.getMonth() + 1
+            ).padStart(2, "0")}${String(now.getDate()).padStart(
+              2,
+              "0"
+            )}${String(now.getHours()).padStart(2, "0")}${String(
+              now.getMinutes()
+            ).padStart(2, "0")}${String(now.getSeconds()).padStart(
+              2,
+              "0"
+            )}${String(now.getMilliseconds()).padStart(3, "0")}`;
+            const container = {
+              id: customId,
+              customId: customId,
+              lat: coords.latitude,
+              lon: coords.longitude,
+              text: `${title} : ${description}`,
+              timestamp: new Date().toISOString(),
+            };
+            socket.emit("send_report", container);
+
+            alert("Reporte enviado con éxito");
+
+            // Cierra el modal
+            const reportModal = document.getElementById("reportModal");
+            const modalInstance = bootstrap.Modal.getInstance(reportModal);
+            modalInstance.hide();
+
+            // Limpia el formulario
+            document.getElementById("reportForm").reset();
+          });
+        });
+    </script>
+  </body>
+</html>

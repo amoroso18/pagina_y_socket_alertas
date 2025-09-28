@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-image: url("icons/world-map-background-in-navy-blue-and-gold-free-vector.jpg"); /* Ruta de tu imagen */
+        background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; /* Evita que se repita */
+        height: 100vh; /* Asegura que el fondo ocupe toda la altura de la ventana */
+      }
+
+
+      .container {
+        background: rgba(34, 26, 26, 0.268); /* Fondo blanco semitransparente */
+        border-radius: 10px; /* Bordes redondeados */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+
+        <div class="container p-4" style="max-width: 400px;">
+            <form id="loginForm" class="card p-4 shadow">
+        <div class="mb-3">
+          <label for="userType" class="form-label">Tipo de Usuario:</label>
+          <select id="userType" class="form-select" required>
+            <option value="Hospital">Hospital</option>
+            <option value="Bombero">Bombero</option>
+            <option value="Serenazgo">Serenazgo</option>
+            <option value="Policía">Policía</option>
+            <option value="Profesor">Profesor</option>
+            <option value="Seguridad Universitaria">
+              Seguridad Universitaria
+            </option>
+            <option value="Administrador">Administrador</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Ingrese su nombre"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="token" class="form-label">Token:</label>
+          <input
+            type="text"
+            id="token"
+            class="form-control"
+            value="AS8AW7E67AWDAW876"
+            placeholder="Ingrese su token"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña:</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            value="123456"
+            placeholder="123456"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Ingresar</button>
+      </form>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

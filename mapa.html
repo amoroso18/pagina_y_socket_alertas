@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa Interactivo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="map/map.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-lg-9 px-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand px-2" href="#"
+              >Bienvenido, <span id="userName"></span> (<span
+                id="userType"
+              ></span
+              >)</a
+            >
+            <div class="d-flex">
+              <span class="navbar-text text-white me-3"> </span>
+              <button id="logoutButton" class="btn btn-danger btn-sm me-2">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+              </button>
+              <button
+                id="toggleNotifications"
+                class="btn btn-dark d-lg-none"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#notifications"
+                aria-controls="notifications"
+              >
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div id="content">
+          <div id="map"></div>
+        </div>
+      </div>
+
+      <!-- Notificaciones -->
+      <div
+        id="notifications"
+        class="col-lg-3 offcanvas-lg offcanvas-end px-0"
+        tabindex="-1"
+        aria-labelledby="notificationsLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close d-lg-none"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body" style="display: block;">
+         <div class="row">
+            <div id="notificationsLabel" class="navbar navbar-expand-lg navbar-dark bg-primary py-3 px-3">
+                <i class="fa fa-bell me-2 ms-2" aria-hidden="true"></i>
+                <span>Historial de Notificaciones</span>
+                </div>
+            <div id="notificationList"></div>
+            <!-- <div class="p-3">
+              <hr />
+              <button id="addNotification2">Agregar Notificación</button>
+              <button id="addAlert">Agregar Alerta</button>
+            </div> -->
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="map/auth.js"></script>
+    <script src="map/toast.js"></script>
+    <script src="map/notificacion.js"></script>
+    <script src="map/map.js"></script>
+    <script src="map/socket.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document
+        .querySelector(".btn-close")
+        .addEventListener("click", function () {
+          const offcanvas = bootstrap.Offcanvas.getInstance(
+            document.getElementById("notifications")
+          );
+          offcanvas.hide();
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+#content {
+    display: flex;
+    height: calc(100vh - 56px); /* Altura menos el navbar */
+}
+
+#map {
+    flex: 2;
+    height: 100%;
+    position: relative;
+}
+
+#notifications {
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+    background-color: #f8f9fa;
+    border-left: 1px solid #ddd;
+}
+
+#notificationsLabel {
+    padding: 9.73px;
+    background-color: #007bff;
+    color: white;
+}
+#notificationList{
+  max-height: 50vh; /* La altura máxima será el 50% del alto de la pantalla */
+}
+
+.leaflet-marker-icon {
+    transition: transform 0.5s ease-in-out; /* Suaviza el movimiento */
+  }
+  
+
+
+  /* Efecto de parpadeo */
+.icon-alerta {
+    animation: blink 1s infinite;
+  }
+  .icon-rebote {
+    animation: blink 1s infinite ;
+}
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  
